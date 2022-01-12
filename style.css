@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Droid';
+    src: url(fontes/idroid.otf);
+}
+
 body {
     background-color: aquamarine;
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
-    background-color: darkgreen;
+    background-image: linear-gradient(rgba(193, 231, 193, 0.65) 10%,rgba(53, 172, 53, 0.65) 30%, rgba(16, 98, 16, 0.65));
     padding: 30px 30px 10px 30px;
     margin:  -8px -13px 0px -8px;
     
@@ -17,7 +24,7 @@ header > h1 {
     font-weight: lighter;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 10px 10px 10px 10px hsl(0, 0%, 0%);
+    text-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.301);
     
   }
 
@@ -26,7 +33,7 @@ header > h2 {
     font-weight: lighter;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 10px 10px 10px 10px hsl(0, 0%, 0%);
+    text-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.301);
     
   }
 
@@ -51,13 +58,75 @@ nav > a:visited {
 main {
     background-color: white;
     padding: 10px 30px 10px 30px;
-    margin: 00px 150px 10px 150px;
+    margin: 00px 150px 60px 150px;
     text-align: justify;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 3px 3px 15px 3px hsla(0, 0%, 0%, 0.308);
 }
 
-main > h2 {
-        
-        
+main > article {
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 00px 0px 10px 0px;
+    margin: 00px 0px 10px 0px;
+    text-indent: 10px;
+}
+
+main > img { 
+    max-width: 700;
+    max-height: 266;
+}
+
+article > h2 {
+    color: darkgreen;
+    font-family: 'Droid';
+}
+
+article > h3 {
+    background-image: radial-gradient(rgba(127, 255, 212, 0.400) 30%, rgba(127, 255, 212, 0.308) 20%, rgba(127, 255, 212, 0));
+    color: darkgreen;
+    font-family: 'Droid';
+    padding: 0px 0px 0px 10px;
+}
+
+p {
+    text-indent: 15px;
+}
+
+article > h4 {
+    background-color: green;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+    
+}
+
+article > p {
+
+    padding: 0px 10px 0px 10px;
+
+}
+
+article > ul {
+    list-style: '\2713';
+}
+
+li > a {
+    color: black;
+    text-decoration: underline;
+}
+
+    
+footer {
+    background-color: darkgreen;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding: 10px -30px 0px 0px;
+    margin:  0px;
+}
+
+footer > p {
+    padding: 0px -10px -10px -10px;
+    margin: 0px -10px -10px -10px;
 }
